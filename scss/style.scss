@@ -1,0 +1,378 @@
+@import "all_page";
+
+body > * {
+    @include position;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: $colorWhite;
+    background: none;
+    border-bottom: 2px solid;
+    
+    @include mQ(767px) {
+        color: $colorFour;
+    }
+    
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a {
+    color: $colorWhite;
+    font-size: 16px;
+    @include mQ(767px) {
+        color: $colorFour;
+    }
+}
+
+.navbar-default {
+    background: none;
+    border-bottom: none;
+    
+}
+.navbar-collapse{
+    @include mQ(767px) {
+        background: $colorOne;
+    }
+}
+
+.navbar-fixed-top {
+    top: 87px;
+
+        @include mQ(991px) {
+            top: 50px;
+        }
+}
+
+//.navbar-default .navbar-nav>li>a{
+//     border-bottom: 2px solid;
+//}
+.navbar-header {
+    @include mQ(991px) {
+        float: inherit;
+    }
+}
+
+.nav-logo {
+    position: relative;
+    left: -68px;
+    top: -75px;
+    padding-right: 33px;
+
+    @include mQ(991px) {
+        position: inherit;
+        width: 224px;
+        left: 50%;
+        margin-left: -112px !important;
+        top: -67px;
+    }
+    @include mQ(767px) {
+        width: 199px;
+    left: 116px;
+    top: -7px;
+    }
+}
+
+.logo-hidden {
+    visibility: hidden
+}
+
+nav {
+    .nav {
+        li {
+            a {
+                padding: 5px 0px;
+                margin-right: 74px;
+                font-family: 'SegoeUI-semiBold';
+                @include mQ(991px) {
+                 margin-right: 0px;   
+                }
+                @include mQ(767px) {
+                 padding-left: 20px  
+                }
+            }
+
+        }
+    }
+}
+
+.nav {
+    li:last-child {
+        a {
+            margin-right: 0px;
+        }
+
+    }
+}
+
+.heroTop {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.input-round {
+    margin-top: 13px;
+
+    input.form-control.input-round-box {
+        width: 90%;
+        height: 29px;
+    }
+
+    button {
+        position: absolute;
+        z-index: 1;
+        float: right;
+        top: 6px;
+        right: -2px;
+        background: none;
+        border: none;
+        color: $colorOne;
+        color: $colorOne;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 35px;
+    background: $colorOne;
+}
+
+.topSign {
+    position: absolute;
+    right: 6px;
+    top: 42px;
+
+    @include mQ(991px) {
+        right: 88px;
+        top: 12px;
+        margin-right: -49px;
+    }
+    @include mQ(767px) {
+        right: 48px;
+    }
+
+
+    .signBtn {
+        text-align: right;
+
+        a {
+            display: inline-block;
+            color: #fff;
+            background: $colorThree;
+            padding: 9px 21px;
+            font-size: 17px;
+            font-family: 'SegoeUI-semiBold';
+
+            &:hover {
+                background: $colorFour;
+                text-decoration: none;
+            }
+
+        }
+    }
+}
+
+
+.intro-bg {
+    @include bgDef;
+    background-image: url(../img/img2.jpg);
+    background-position: top center;
+
+    &::after {
+        background: $colorTwo;
+        opacity: .4;
+
+    }
+
+}
+
+#thumbs2 ul li a {
+    border-radius: none;
+}
+
+//.introSlide {
+//    p {
+//        text-align: center;
+//        color: $colorWhite;
+//    }
+//}
+
+.about-bg {
+
+    @include bgDef;
+    background-image: url(../img/img8.jpg);
+
+    &::after {
+        background: $colorFour;
+        opacity: .8;
+
+    }
+}
+
+.intro-section {
+    text-align: left;
+    padding-top: 268px;
+
+
+    h1 {
+        color: $colorWhite;
+        font-family: 'Segoe-UI-Light';
+        font-size: 78px;
+        line-height: 47px;
+    }
+
+    h2 {
+        color: $colorWhite;
+        font-family: 'Segoe UI-Bold';
+        font-size: 130px;
+    }
+
+    a {
+        text-align: center;
+        background: $colorThree;
+        color: $colorWhite;
+        border-radius: 30px;
+        display: inline-block;
+        padding: 5px 97px;
+        font-size: 22px;
+        font-family: 'Segoe-UI-Light';
+        margin-top: 22px;
+
+        &:hover {
+            background: $colorFour;
+            text-decoration: none;
+        }
+
+        span {
+            padding-left: 20px;
+        }
+    }
+
+}
+
+
+.about-section {
+    color: $colorWhite;
+    padding-top: 160px;
+    padding-bottom: 60px;
+
+
+    h2 {
+        position: relative;
+        padding-bottom: 15px;
+
+        &:after {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            content: '';
+            width: 60px;
+            height: 5px;
+            margin-left: -30px;
+            background: #fff;
+            border-radius: 7px;
+        }
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-bottom: 28px;
+        margin-top: 47px;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: 'Segoe-UI-Light';
+    }
+
+}
+
+
+
+
+
+
+
+
+.singleTema {
+    text-align: center;
+
+    > div {
+        width: 71px;
+        height: 71px;
+        border-radius: 40px;
+        margin: auto;
+    }
+}
+
+.teamAvatar1 {
+    @include bgDef;
+    background-image: url(../img/img5.jpg);
+}
+
+.teamAvatar2 {
+    @include bgDef;
+    background-image: url(../img/img7.jpg);
+}
+
+.teamAvatar3 {
+    @include bgDef;
+    background-image: url(../img/img4.jpg);
+}
+
+.teamSec {
+    max-width: 285px;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+
+    h6.name {
+        margin-top: 8px;
+    }
+
+    p {
+        font-size: 13px;
+        font-family: 'Segoe-UI-Light';
+        margin-top: 12px;
+    }
+}
+
+ul.nav.navbar-nav {
+    @include mQ(991px) {
+        float: none;
+        text-align: center
+    }
+}
+
+.navbar-nav > li {
+    @include mQ(991px) {
+        float: none;
+        display: inline-block;
+    }
+    @include mQ(767px) {
+        display: block;
+        text-align: left;
+    }
+}
+.introSlide{
+    @include mQ(767px) {
+        display: none;
+    }
+}
+
+.navbar-toggle {
+    margin-top: 20px;
+}
